@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Digital Pathology Viewer</title>
+
+    </head>
+    <body>
+        <div id="openseadragon"></div>
+        <div id="loader"><span class="img-vertical-align-helper"></span></div>
+        <div id="popup">
+            <div id="error"></div>
+            <label for="url">Enter the URL of the image before manipulation</label><br>
+            <input type="url" id="url" autofocus>
+            <button type="button" id="show-button">Show!</button>
+        </div>
+        <div id="loading-popup">
+            <span id="loading-message">
+                <img src="loading.svg" alt="loading" height="27">
+                <span>Image loading...</span>
+            </span>
+        </div>
+        <script src='openseadragon/openseadragon.js'></script>
+        <script src='openseadragon/openseadragon-scalebar.js'></script>
+        <script src='openseadragon/openseadragonScreenshot.js'></script>
+        <script src='openseadragon/openseadragon-filtering.js'></script>
+        <script src='openseadragon/FileSaver.js'></script>
+        <script src='openseadragon/canvas-toBlob.js'></script>
+        <script src="index.js"></script>
+    </body>
+</html>
